@@ -10,6 +10,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <!-- Bootstrap Icons CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="/style.css" type="text/css">
 
         <!-- Bootstrap JavaScript -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -17,15 +18,19 @@
     
     
     <body>
-        <nav class="navbar navbar-expand navbar-dark bg-dark navbar-fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
                 <!-- Links -->
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="/index.html">
                         <img src="/images/riley.png" style="height:50px"> Riley Magnet
                     </a>
                   </div>
-                <ul class="navbar-nav">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="property-type-links" role="button" data-bs-toggle="dropdown">
                             Computer Science
@@ -119,22 +124,189 @@
                     </li>
                 </ul>
             </div>
+            </div>
         </nav>
         
-        <header class="text-center p-3">
+        <header class="text-center p-3 mt-5">
             <h1 class="display-3">Hear from Students</h1>
             <p class="lead">What our amazing students have to say about the magnet programs.</p> 
         </header>
             
         <main class="container">
-            <div class="row">
-                <div class="col-sm-6 text-center">
-                   
+            <div class="container mt-5">
+                <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+              
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                      <div class="row align-items-center bg-warning">
+                        <div class="col-md-6 studentCarouselImg">
+                          <img src="/images/mbokhart.jpeg" class="d-block w-100" alt="Margo Bokhart">
+                        </div>
+                        <div class="col-md-6 ">
+                          <div class="text-center">
+                            <h1>Margo Bokhart</h1>
+                            <h3>Class of 2016</h3>
+                            <p>When I think back to high school, the engineering program was a key part. It was always one of my favorite classes to go to. The program really helped me open my eyes and think about things in abstract ways. To this day I still look at something and think “how can I make that better” and I’d have to thank the Riley engineering program for that.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                      <div class="row align-items-center bg-navy text-light">
+                        <div class="col-md-6 studentCarouselImg">
+                          <img src="/images/snjeri.png" class="d-block w-100" alt="Image 2">
+                        </div>
+                        <div class="col-md-6">
+                          <div class="text-center">
+                            <h1>Sharon Njeri</h1>
+                            <h3>Class of 2015</h3>
+                            <p>I really like the diversity at Riley. It was good to work with so many different people. As a woman, I could work with all these different people, which helped me translate that to college. I was prepared at Riley for Purdue.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row align-items-center bg-warning">
+                          <div class="col-md-6 studentCarouselImg">
+                            <img src="/images/jgrundy.png" class="d-block w-100" alt="Image 2">
+                          </div>
+                          <div class="col-md-6">
+                            <div class="text-center">
+                              <h1>Jadon Grundy</h1>
+                              <h3>Class of 2015</h3>
+                              <p>You will learn many new and interesting things. You will also learn how to stay on task and be consistent, as well as working with others. The program is very hands on and uses high end computer software.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+              
+                      <div class="carousel-item">
+                        <div class="row align-items-center bg-navy text-light">
+                          <div class="col-md-6 studentCarouselImg">
+                            <img src="/images/awalker.jpeg" class="d-block w-100" alt="Image 2">
+                          </div>
+                          <div class="col-md-6">
+                            <div class="text-center">
+                              <h1>Allison Walker</h1>
+                              <h3>Class of 2017</h3>
+                              <p>Several of my PLTW classes prepared me for classes in college. I really enjoyed learning how to 3D model in high school and how that put me at an advantage in college. My most memorable class from PLTW was the senior year engineering project. I really enjoyed seeing a year of work come to action and design a solution to a problem I was tasked to solve. In college I had several design classes similar to the senior year class and thought it was neat to follow the same design process I learned in high school.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="carousel-item">
+                        <div class="row align-items-center bg-warning">
+                          <div class="col-md-6 studentCarouselImg">
+                            <img src="/images/mmedich.png" class="d-block w-100" alt="Image 2">
+                          </div>
+                          <div class="col-md-6">
+                            <div class="text-center">
+                              <h1>Mila Medich</h1>
+                              <h3>Class of 2017</h3>
+                              <p>I am so thankful for the engineering program at Riley because it gave me such a strong community within the field and it showed me how I don’t need to change myself to fit into engineering but instead I could change engineering to fit to me and that led me to find my own path within the realm of engineering!</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="carousel-item">
+                        <div class="row align-items-center bg-navy text-light">
+                          <div class="col-md-6 studentCarouselImg">
+                            <img src="/images/rcdiaz.jpeg" class="d-block w-100" alt="Image 2">
+                          </div>
+                          <div class="col-md-6">
+                            <div class="text-center">
+                              <h1>Ricardo Carbajal-Diaz</h1>
+                              <h3>Class of 2017</h3>
+                              <p>Develop a habit of studying. Get involved in something that makes you stand out. Almost everyone you meet in college was in their school’s top 10% and had the 4.0 GPA, differentiate yourself.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="carousel-item">
+                        <div class="row align-items-center bg-warning">
+                          <div class="col-md-6 studentCarouselImg">
+                            <img src="/images/iwalters.png" class="d-block w-100" alt="Image 2">
+                          </div>
+                          <div class="col-md-6">
+                            <div class="text-center">
+                              <h1>Isaac Walters</h1>
+                              <h3>Class of 2019</h3>
+                              <p>The Riley magnet really helped me learn how to problem solve. It also helped me know how to read prints because I have to do that on a day to day basis. I also use the electrical formula to find amps off of the voltage. So even with not going to college to be an engineer the Riley magnet really helped me with my trade job.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="carousel-item">
+                        <div class="row align-items-center bg-navy text-light">
+                          <div class="col-md-6 studentCarouselImg">
+                            <img src="/images/jkimani.jpeg" class="d-block w-100" alt="Image 2">
+                          </div>
+                          <div class="col-md-6">
+                            <div class="text-center">
+                              <h1>Jane Kimani</h1>
+                              <h3>Class of 2019</h3>
+                              <p>The program played a huge role in my decision to pursue a degree in the STEM field, because I was able to gain hands on experience in the engineering and technology field and explore different career fields within STEM through the program. Riley has THE best teachers in South Bend!</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="carousel-item">
+                        <div class="row align-items-center bg-warning">
+                          <div class="col-md-6 studentCarouselImg">
+                            <img src="/images/ballison.png" class="d-block w-100" alt="Image 2">
+                          </div>
+                          <div class="col-md-6">
+                            <div class="text-center">
+                              <h1>Braeden Allison</h1>
+                              <h3>Class of 2020</h3>
+                              <p>The environment at Riley High school was very beneficial to me by surrounding me with a diverse group of students coming from very different walks of life. It helped prepare me socially for the world outside of high school and I’ve always appreciated that about my Riley experience.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="carousel-item">
+                        <div class="row align-items-center bg-navy text-light">
+                          <div class="col-md-6 studentCarouselImg">
+                            <img src="/images/mwilliams.png" class="d-block w-100" alt="Image 2">
+                          </div>
+                          <div class="col-md-6">
+                            <div class="text-center">
+                              <h1>Matthew Williams II</h1>
+                              <h3>Class of 2022</h3>
+                              <p>Find a really solid group of friends you can depend on and trust. Also know that the first group you find at the beginning might not be the same people you hang out with later on down the line. Also if you have a passion and you wanna make it your career go for it, just know it might be thought and difficult to get to where you want to be. It'll take a lot of hard work but it will be worth it and the journey can be quite fun and interesting at times. It will have its challenges though.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      
+                    <!-- Add more slides as needed -->
+              
+                  </div>
+              
+                  <!-- Controls -->
+                  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
                 </div>
-                <div class="col-sm-6 text-center">
-                    
-                </div>
-            </div>
+              </div>
+
+
         </main>
     </body>
 </html>
